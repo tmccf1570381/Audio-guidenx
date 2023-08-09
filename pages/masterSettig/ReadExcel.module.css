@@ -1,0 +1,325 @@
+.contentArea{
+    padding-bottom: 8vh;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    padding: 0 0 0 1.8vw;
+    height: 7vh;
+    margin: 0.5vh 0 0 1vw;
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    width: 40vw;
+    height: 6vh;
+    border: solid black 1px;
+    border-radius: 3px;
+    font-size: 105%;
+    margin-left: 1.2%;
+    padding: 0 0.5vw;
+    background-color: rgb(255, 247, 237);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.notRead{
+    background-color: rgba(190, 190, 190, 0.688) !important;
+    text-decoration-line: line-through;
+}
+
+.selectbox{
+    width: 12vw;
+    height: 6vh;
+    border-radius: 3px;
+    border: solid black 1px;
+    margin: 0 1%;
+    padding-right: 3vw;
+    display: flex;
+    align-items: center;
+    font-size: 105%;
+    text-align: center;
+}
+
+.file{
+    margin-left: auto;
+    margin-right: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.icon{
+    max-height:4.5vh;
+    padding: 0 0.8vw 0 0.8vw;
+}
+
+.icon2{
+    max-height:4.5vh;
+    left: -1vw;
+    padding: 0.5vh 1vw;
+    margin: 0 .1vw;
+    border: 0.3rem rgba(255, 255, 255, 0) solid;
+}
+
+.icon2:hover{
+    border-radius: 2px;
+    border: 0.3rem solid rgba(255, 255, 255, 0);
+    transform: translate3d(0, .1vh, 0);
+    background-color: rgba(174, 174, 174, 0.283);
+    box-shadow: 0.1vw 0.1vh 0.3vw rgba(128, 128, 128, 0.516);
+}
+
+.icon2:active{
+    border: 0.3rem solid rgba(250, 212, 123, 0.805);
+}
+
+.icon3{
+    position: relative;
+    max-width: 2vw;
+    left:-4vw;
+}
+
+.icon4{
+    position: relative;
+    max-height:4.5vh;
+    left: -2vw;
+    padding: 0.5vh 1vw;
+    margin: 0 .1vw;
+    border: 0.3rem rgba(255, 255, 255, 0) solid;
+}
+
+.icon4:hover{
+    border-radius: 2px;
+    border: 0.3rem solid rgba(255, 255, 255, 0);
+    transform: translate3d(0, .1vh, 0);
+    background-color: rgba(174, 174, 174, 0.283);
+    box-shadow: 0.1vw 0.1vh 0.3vw rgba(128, 128, 128, 0.516);
+}
+
+.tail{
+    z-index: 2;
+    bottom: 2vh;
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(107, 107, 107);
+}
+
+.selectFile{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 3px;
+    border: solid black 1px;
+    background-color: rgb(238, 238, 238);
+    margin: 0 0 0 1%;
+    display: flex;
+    align-items: center;
+}
+
+.outFileName{
+    width: 19vw;
+    height: 5vh;
+    border-radius: 3px;
+    border: solid black 1px;
+    background-color: rgb(255, 247, 237);
+    margin: 0 0 0 1%;
+    padding: 0 0.5vw;
+    display: flex;
+    align-items: center;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.buttons{
+    display: block;
+    height: 5vh;
+    width: 5vw;
+    font-size: 1.1rem;
+}
+
+.hidden{
+    display: none;
+}
+
+.sub{
+    margin: 0 0% 0 2.8%;
+    font-size: 120%;
+    color: rgb(73, 73, 73);
+    text-shadow: 0.1vw 0.1vh 0.2vw rgba(155, 155, 155, 0.761);
+}
+
+.sub2{
+    margin: 0 0 0 2.8%;
+    font-size: 120%;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.1vw 0.1vh 0.2vw rgba(155, 155, 155, 0.567);
+}
+
+.abst{
+    top: 1vh;
+    width: 100%;
+    height: 8vh;
+    z-index: 1;
+    margin: 0 0 1vh 2.5vw;
+    padding: 0 0 0 1vw;
+    position:sticky; 
+    display: flex;
+    align-items: center;
+    font-size: 120%;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    color: rgb(74, 74, 74);
+    text-shadow: 0.2vw 0.1vh 0.5vw rgba(201, 187, 152, 0.699);
+}
+
+.abst::before{
+    content:"";
+    display:inline-block;
+    width:0.5vw;
+    height:7.5vh;
+    background-color:rgb(74, 74, 74);
+    position:absolute;
+    left:-0.5vw;
+}
+
+.move{
+    padding: 0.1vh 1vw;
+    letter-spacing: -0.6rem;
+    font-size: 130%;
+    font-weight:bold;
+    color: rgb(171, 171, 171);
+}
+
+.move:hover{    
+    color: rgb(98, 98, 98);
+    text-shadow: 0.1vw 0.1vh 0.2vw rgba(128, 128, 128, 0.69);
+}
+
+.spacer{
+    width: 100%;
+    height: 1vh;
+    background-color: white;
+    position: sticky;
+    top:0;
+}
+
+.background{
+    /* height: 92vh; */
+    width: 100%;
+    object-fit: cover;
+    top: -3vh;
+    opacity:0.6;
+    filter: sepia(99%);
+    position: fixed;
+}
+
+.PPmessage{
+    top:30vh;
+    left: 25vw;
+    width: 50vw;
+    height: 30vh;
+    position: absolute;
+    background-color: rgb(191, 191, 191);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    z-index: 3;
+}
+
+.PPmessage2{
+    top:25vh;
+    left: 25vw;
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    background-color: rgb(243, 243, 243);
+    border: #000 solid 1px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    z-index: 10;
+}
+
+.PPPhoto{
+    max-block-size: 90%;
+    object-fit: cover;
+}
+
+.open{
+    transform: scale(1);
+}
+
+.closeText{
+    position: absolute;
+    background-color: #fff;
+    top:0%;
+    right: 2%;
+}
+
+.btn2 {
+    border: 2px solid #000;
+    height: 4vh;
+    width: 5vw;
+    border-radius: 0;
+    background: #fff;
+    transform-style: preserve-3d;
+    top: 13.6vh;
+    left: 24.5vw;
+    margin: 0 10%;
+}
+
+.btn2:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.3vw;
+    height: 100%;
+    content: '';
+    transition: all .3s;
+    background: #000;
+}
+
+.btn2:hover {
+    color: #fff;
+    background: #000;
+}
+
+.btn2:hover:before {
+    background: #fff;
+}
+
+.btnArea{
+    text-align: center;
+}
+  
+.supple{
+    font-weight: 100;
+    font-size: 80%;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    color: rgb(146, 114, 56);
+    text-decoration: underline;
+}
+
+.h2{
+  text-align: center;  
+}

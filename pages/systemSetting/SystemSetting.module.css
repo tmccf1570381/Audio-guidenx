@@ -1,0 +1,73 @@
+.template{
+    text-align: center;
+    margin-top: 17vh;
+}
+
+.background{
+    width: 100%;
+    object-fit: cover;
+    opacity:0.6;
+    filter: sepia(60%);
+    position: fixed;
+    z-index: -1;
+}
+
+.PPmessage{
+    width: 38vw;
+    height: 30vh;
+    position: absolute;
+    background-color: rgb(252, 246, 229);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    z-index: 5;
+}
+
+.open{
+    transform: scale(1);
+}
+
+.btn {
+    border: 2px solid #000;
+    height: 4vh;
+    width: 5vw;
+    border-radius: 0;
+    background: #fff;
+    transform-style: preserve-3d;
+    top: 13.6vh;
+    left: 24.5vw;
+    margin: 0 10%;
+}
+
+.btn:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.3vw;
+    height: 100%;
+    content: '';
+    transition: all .3s;
+    background: #000;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #000;
+}
+
+.btn:hover:before {
+    background: #fff;
+}
+
+.btnArea{
+    text-align: center;
+}
+  
+.supple{
+    font-weight: 100;
+    font-size: 80%;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
